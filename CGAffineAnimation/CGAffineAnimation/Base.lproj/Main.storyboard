@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CGAffineAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhb-9Z-ytI">
+                                <rect key="frame" x="0.0" y="622" width="375" height="122"/>
+                                <subviews>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dP-f0-tmz">
+                                        <rect key="frame" x="165.5" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.43351348458904121" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="en7-Ep-EEE"/>
+                                            <constraint firstAttribute="width" constant="44" id="ywJ-Q8-1gG"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR9-Wg-faD">
+                                        <rect key="frame" x="165.5" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Zpd-IE-Ju1"/>
+                                            <constraint firstAttribute="height" constant="44" id="qPB-Jv-A7U"/>
+                                        </constraints>
+                                        <state key="normal" image="down-arrow"/>
+                                        <connections>
+                                            <action selector="arrowButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBh-AI-Dh7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xl2-BR-puS">
+                                        <rect key="frame" x="81.5" y="69" width="44" height="44"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Ko1-w2-Fv9"/>
+                                            <constraint firstAttribute="width" constant="44" id="kDh-qv-Om6"/>
+                                        </constraints>
+                                    </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWe-F0-RVp">
+                                        <rect key="frame" x="165.5" y="69" width="44" height="44"/>
+                                        <color key="backgroundColor" red="0.34509803919999998" green="0.81176470590000005" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="SVc-VR-1FA"/>
+                                            <constraint firstAttribute="width" constant="44" id="fSi-ZV-Mul"/>
+                                        </constraints>
+                                    </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsw-1i-CwY">
+                                        <rect key="frame" x="249.5" y="69" width="44" height="44"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Bbz-pL-Mst"/>
+                                            <constraint firstAttribute="height" constant="44" id="Ve9-gD-qpX"/>
+                                        </constraints>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Zsw-1i-CwY" firstAttribute="top" secondItem="Jhb-9Z-ytI" secondAttribute="top" constant="69" id="C0a-EX-0oy"/>
+                                    <constraint firstItem="QWe-F0-RVp" firstAttribute="top" secondItem="6dP-f0-tmz" secondAttribute="bottom" constant="25" id="Jqd-Ne-JDD"/>
+                                    <constraint firstItem="6dP-f0-tmz" firstAttribute="top" secondItem="Jhb-9Z-ytI" secondAttribute="top" id="MT8-Qa-u2S"/>
+                                    <constraint firstItem="Zsw-1i-CwY" firstAttribute="leading" secondItem="QWe-F0-RVp" secondAttribute="trailing" constant="40" id="MaY-SY-cbO"/>
+                                    <constraint firstItem="6dP-f0-tmz" firstAttribute="centerX" secondItem="Jhb-9Z-ytI" secondAttribute="centerX" id="Ofj-DP-5c3"/>
+                                    <constraint firstItem="iR9-Wg-faD" firstAttribute="top" secondItem="Jhb-9Z-ytI" secondAttribute="top" id="U12-Bi-eSf"/>
+                                    <constraint firstItem="QWe-F0-RVp" firstAttribute="centerX" secondItem="Jhb-9Z-ytI" secondAttribute="centerX" id="afc-kd-BDo"/>
+                                    <constraint firstItem="QWe-F0-RVp" firstAttribute="leading" secondItem="xl2-BR-puS" secondAttribute="trailing" constant="40" id="hGA-cZ-GId"/>
+                                    <constraint firstItem="xl2-BR-puS" firstAttribute="top" secondItem="Jhb-9Z-ytI" secondAttribute="top" constant="69" id="iKL-Xe-Eoa"/>
+                                    <constraint firstItem="iR9-Wg-faD" firstAttribute="centerX" secondItem="Jhb-9Z-ytI" secondAttribute="centerX" id="l0N-9j-B81"/>
+                                    <constraint firstAttribute="height" constant="122" id="q0e-N7-Bt1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Jhb-9Z-ytI" secondAttribute="bottom" constant="-77" id="BTm-QK-XvC"/>
+                            <constraint firstItem="Jhb-9Z-ytI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ECc-kE-iGP"/>
+                            <constraint firstItem="Jhb-9Z-ytI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gLN-Tp-qkD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="arrowButton" destination="iR9-Wg-faD" id="fB7-qL-Fq9"/>
+                        <outlet property="gradientView" destination="6dP-f0-tmz" id="2nf-RO-lkZ"/>
+                        <outlet property="greenButton" destination="QWe-F0-RVp" id="gSZ-Ke-xI5"/>
+                        <outlet property="mainView" destination="Jhb-9Z-ytI" id="zZb-CQ-ipa"/>
+                        <outlet property="redButton" destination="xl2-BR-puS" id="IJP-gm-kDg"/>
+                        <outlet property="yellowButton" destination="Zsw-1i-CwY" id="eMX-MB-qav"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down-arrow" width="22" height="22"/>
+    </resources>
+</document>
